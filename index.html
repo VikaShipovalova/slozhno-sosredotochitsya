@@ -184,36 +184,47 @@
       <section class="gallery">
         <h3 class="gallery__title title-decor">А можно в картинках?</h3>
         <div class="gallery_card">
-          <img
-            class="image img_sunset"
-            src="./images/sunset.png"
-            alt="Большая тарелка с мороженным в забавном стиле"
-            loading="lazy"
-          />
-          <img
-            class="image img_ice-cream"
-            src="./images/ice-cream.png"
-            alt="Большая тарелка с мороженным в забавном стиле"
-            loading="lazy"
-          />
-          <img
-            class="image img_tape"
-            src="./images/tape.png"
-            alt="Кассета от магнитофона в окружении компьютерных окон"
-            loading="lazy"
-          />
-          <img
-            class="image img_books"
-            src="./images/books.png"
-            alt="Сложенные друг на друга книги"
-            loading="lazy"
-          />
-          <img
-            class="image img_street"
-            src="./images/street.png"
-            alt="Улица в сереневых тонах"
-            loading="lazy"
-          />
+          <picture class="image">
+            <img
+              class="content_image img_sunset"
+              src="./images/sunset.png"
+              alt="Большая тарелка с мороженным в забавном стиле"
+              loading="lazy"
+            />
+          </picture>
+          <picture class="image">
+            <source srcset="./images/ice-cream.avif" type="image/avif" />
+            <img
+              class="content_image"
+              src="./images/ice-cream.png"
+              alt="Большая тарелка с мороженным в забавном стиле"
+              loading="lazy"
+            />
+          </picture>
+          <picture class="image">
+            <img
+              class="content_image img_tape"
+              src="./images/tape.png"
+              alt="Кассета от магнитофона в окружении компьютерных окон"
+              loading="lazy"
+            />
+          </picture>
+          <picture class="image">
+            <img
+              class="content_image img_books"
+              src="./images/books.png"
+              alt="Сложенные друг на друга книги"
+              loading="lazy"
+            />
+          </picture>
+          <picture class="image">
+            <img
+              class="content_image img_street"
+              src="./images/street.png"
+              alt="Улица в сереневых тонах"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
     </main>
