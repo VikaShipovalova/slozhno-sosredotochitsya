@@ -4,7 +4,6 @@
   переключая тему
 */
 
-
 .page.theme_light {
   --accent-color: #ff8dcb;
   --menu-color: #353430;
@@ -13,7 +12,7 @@
   --main-title-color: #ffc2e6;
   --title-decor-color: #353430;
   --main-color: #fff1f7;
-  --header-footer-title-max-shadow: #FF0070;
+  --header-footer-title-max-shadow: #ff0070;
   --bg-image: url(../images/cover-image-light.png);
   --rec-visibility: hidden;
   background-image: var(--bg-image);
@@ -28,7 +27,7 @@
     --main-title-color: #ffc2e6;
     --title-decor-color: #353430;
     --main-color: #fff1f7;
-    --header-footer-title-max-shadow: #FF0070;
+    --header-footer-title-max-shadow: #ff0070;
     --rec-visibility: hidden;
     --bg-image: url(../images/cover-image-light.png);
   }
@@ -41,5 +40,3 @@
     visibility: var(--rec-visibility);
   }
 }
-
-

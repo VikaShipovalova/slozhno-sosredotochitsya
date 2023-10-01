@@ -5,12 +5,12 @@
 */
 
 .page.theme_dark {
-  --accent-color: #FF0070;
-  --menu-color: #FF0070;
-  --question-color: #FF0070;
-  --header-footer-title-max-shadow: #FF0070;
-  --text-color: #F1B2CE;
-  --main-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --menu-color: #ff0070;
+  --question-color: #ff0070;
+  --header-footer-title-max-shadow: #ff0070;
+  --text-color: #f1b2ce;
+  --main-title-color: #db00ff;
   --title-decor-color: #000028;
   --main-color: #000028;
   --rec-visibility: visible;
@@ -18,15 +18,14 @@
   background-image: var(--bg-image);
 }
 
-
-@media(prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #FF0070;
-    --menu-color: #FF0070;
-    --question-color: #FF0070;
-    --header-footer-title-max-shadow: #FF0070;
-    --text-color: #F1B2CE;
-    --main-title-color: #DB00FF;
+    --accent-color: #ff0070;
+    --menu-color: #ff0070;
+    --question-color: #ff0070;
+    --header-footer-title-max-shadow: #ff0070;
+    --text-color: #f1b2ce;
+    --main-title-color: #db00ff;
     --title-decor-color: #000028;
     --main-color: #000028;
     --bg-image: url(../images/cover-image-dark.png);

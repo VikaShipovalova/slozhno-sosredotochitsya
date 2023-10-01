@@ -3,12 +3,12 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #FF0070;
-  --menu-color: #FF0070;
-  --question-color: #FF0070;
-  --header-footer-title-max-shadow: #FF0070;
-  --text-color: #F1B2CE;
-  --main-title-color: #DB00FF;
+  --accent-color: #ff0070;
+  --menu-color: #ff0070;
+  --question-color: #ff0070;
+  --header-footer-title-max-shadow: #ff0070;
+  --text-color: #f1b2ce;
+  --main-title-color: #db00ff;
   --page-padding: 10px;
   --block-end-margin: 40px;
   --main-color: #000028;
@@ -17,10 +17,9 @@
   --rec-visibility: visible;
 }
 
-@media(650px<=width) {
-  :root{
+@media (650px<=width) {
+  :root {
     --page-padding: 20px;
     --block-end-margin: 60px;
   }
 }
-

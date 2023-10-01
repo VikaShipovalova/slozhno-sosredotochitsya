@@ -38,8 +38,8 @@
   right: 1px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid  var(--menu-color);
-  border-right: 1px solid  var(--menu-color);
+  border-top: 1px solid var(--menu-color);
+  border-right: 1px solid var(--menu-color);
 }
 
 .decorated-zone::after {
@@ -49,8 +49,8 @@
   left: 1px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid  var(--menu-color);
-  border-left: 1px solid  var(--menu-color);
+  border-bottom: 1px solid var(--menu-color);
+  border-left: 1px solid var(--menu-color);
 }
 
 .decoration_rec {
@@ -219,7 +219,7 @@
 }
 
 .text__link:focus-visible {
-  outline: 1px solid currentColor;;
+  outline: 1px solid currentColor;
 }
 
 /*картинки*/
@@ -252,8 +252,8 @@
 }
 
 @media (width>=650px) {
- :root{
-  --page-padding: 20px;
+  :root {
+    --page-padding: 20px;
   }
   .page {
     gap: calc(2 * var(--page-padding));
@@ -261,6 +261,7 @@
 
   .header__title {
     margin-inline-start: -18px;
+    align-self: center;
   }
 
   .paragraph__first_type {
@@ -268,7 +269,7 @@
   }
 
   .main {
-    margin-block-end: var(----block-end-margin);
+    margin-block-end: var(--block-end-margin);
   }
   .gallery_card {
     grid-template-columns: repeat(3, 1fr);
@@ -344,7 +345,6 @@
 }
 
 @media (width>=900px) {
-
   .header {
     gap: 100px;
   }
@@ -360,19 +360,22 @@
     color: var(--accent-color);
   }
 
-  .decorated-zone::after{
+  .decorated-zone::after {
     bottom: 40px;
   }
   .main {
     gap: 80px;
   }
   .paragraph__second_type {
-    grid-template-columns: repeat(3, calc((100vw - 4 * var(--page-padding))/3));
+    grid-template-columns: repeat(
+      3,
+      calc((100vw - 4 * var(--page-padding)) / 3)
+    );
     grid-template-rows: repeat(2, minmax(min-content, max-content));
   }
 
   .paragraph__second_type_max_device {
-    inline-size: calc((100vw - 4 * var(--page-padding))/3);
+    inline-size: calc((100vw - 4 * var(--page-padding)) / 3);
   }
 
   .paragraph__second_type .paragraph__question {
@@ -394,7 +397,3 @@
     text-shadow: 2px 2px 0 var(--header-footer-title-max-shadow);
   }
 }
-
-
-
-
