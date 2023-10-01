@@ -2,3 +2,25 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #FF0070;
+  --menu-color: #FF0070;
+  --question-color: #FF0070;
+  --header-footer-title-max-shadow: #FF0070;
+  --text-color: #F1B2CE;
+  --main-title-color: #DB00FF;
+  --page-padding: 10px;
+  --block-end-margin: 40px;
+  --main-color: #000028;
+  --title-decor-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --rec-visibility: visible;
+}
+
+@media(650px<=width) {
+  :root{
+    --page-padding: 20px;
+    --block-end-margin: 60px;
+  }
+}
+
