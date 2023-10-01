@@ -1,8 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -374,10 +373,6 @@
     max-inline-size: calc((100vw - 4 * var(--page-padding)) / 3);
   }
 
-  .paragraph__second_type .paragraph__answer .paragraph__text {
-    margin-block-end: 20px;
-  }
-
   .paragraph__second_type .paragraph__question {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -391,9 +386,12 @@
     grid-row: 2/3;
     grid-column: 1/4;
   }
-
-  .footer__title,
+  
   .header__title {
+    text-shadow: 4px 4px 0 var(--header-footer-title-max-shadow);
+  }
+
+  .footer__title {
     text-shadow: 2px 2px 0 var(--header-footer-title-max-shadow);
   }
 }
