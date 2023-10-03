@@ -15,11 +15,13 @@
   --title-decor-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
+  --font-size-headfoot-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (650px<=width) {
   :root {
     --page-padding: 20px;
     --block-end-margin: 60px;
+    --font-size-headfoot-title: clamp(7.5rem, 0rem + 15.625vw, 10rem);
   }
 }

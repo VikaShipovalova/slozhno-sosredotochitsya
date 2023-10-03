@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -15,7 +15,8 @@
 }
 
 .header {
-  min-block-size: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   max-inline-size: 100%;
   display: grid;
   gap: 50px;
@@ -124,7 +125,7 @@
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: var(--font-size-headfoot-title);
   color: var(--main-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 82.5%;
@@ -149,7 +150,8 @@
 
 /*основной контент*/
 .main {
-  max-inline-size: 100vw;
+  /*max-inline-size: 100vw;*/
+  max-inline-size: 1440px;
   display: grid;
   gap: 50px;
   font-size: 18px;
@@ -164,6 +166,7 @@
 .paragraph {
   display: grid;
   gap: 20px;
+  max-inline-size: 1440px;
 }
 
 .paragraph__question {
@@ -224,6 +227,11 @@
   display: grid;
   gap: var(--page-padding);
 }
+
+.gallery__title{
+  font-size: inherit;
+}
+
 .gallery_card {
   display: grid;
   gap: var(--page-padding);
@@ -234,7 +242,8 @@
 }
 
 .footer {
-  min-block-size: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,15 +252,12 @@
 }
 
 .footer__title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: var(--font-size-headfoot-title);
   color: var(--main-title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width>=650px) {
-  :root {
-    --page-padding: 20px;
-  }
   .page {
     gap: calc(2 * var(--page-padding));
   }
@@ -362,10 +368,7 @@
     gap: 80px;
   }
   .paragraph__second_type {
-    grid-template-columns: repeat(
-      3,
-      calc((100vw - 4 * var(--page-padding)) / 3)
-    );
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
   }
 
