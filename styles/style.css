@@ -1,19 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-.page {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  background-color: var(--main-color);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  padding: var(--page-padding);
-}
-
 .header {
   min-block-size: 668px;
   block-size: 100vh;
@@ -22,6 +8,7 @@
   gap: 50px;
   grid-template-rows: 1fr min-content 1fr;
   padding-bottom: var(--page-padding);
+  margin-block-end: 30px;
 }
 
 /*декор: уголки и rec */
@@ -160,7 +147,7 @@
   font-style: normal;
   color: var(--text-color);
   line-height: 130%;
-  margin-block-end: 10px;
+  margin-block-end: var(--block-end-margin);
 }
 
 .paragraph {
@@ -228,13 +215,13 @@
   gap: var(--page-padding);
 }
 
-.gallery__title{
+.gallery__title {
   font-size: inherit;
 }
 
 .gallery_card {
   display: grid;
-  gap: var(--page-padding);
+  gap: calc(var(--page-padding) / 2);
 }
 
 .content_image {
@@ -258,10 +245,6 @@
 }
 
 @media (width>=650px) {
-  .page {
-    gap: calc(2 * var(--page-padding));
-  }
-
   .header__title {
     margin-inline-start: -18px;
     align-self: center;
@@ -315,6 +298,11 @@
   .header {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 55px;
+    margin-block-end: 40px;
+  }
+
+  .decorated-zone::after {
+    bottom: 40px;
   }
 
   .main {
@@ -348,7 +336,9 @@
 @media (width>=900px) {
   .header {
     gap: 100px;
+    margin-block-end: 35px;
   }
+
   .header__theme-menu {
     align-self: flex-start;
     justify-content: center;
@@ -361,11 +351,9 @@
     color: var(--accent-color);
   }
 
-  .decorated-zone::after {
-    bottom: 40px;
-  }
   .main {
     gap: 80px;
+    margin-block-end: 90px;
   }
   .paragraph__second_type {
     grid-template-columns: repeat(3, 1fr);
@@ -389,7 +377,7 @@
     grid-row: 2/3;
     grid-column: 1/4;
   }
-  
+
   .header__title {
     text-shadow: 4px 4px 0 var(--header-footer-title-max-shadow);
   }

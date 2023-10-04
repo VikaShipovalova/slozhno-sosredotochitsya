@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
@@ -15,6 +15,26 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}*/
+
+.page {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  /*gap: 30px;*/
+  background-color: var(--main-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: var(--page-padding);
 }
 
 h1,
